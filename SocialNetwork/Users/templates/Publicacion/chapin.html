@@ -1,0 +1,36 @@
+
+{% extends 'Publicacion/plantilla.html' %}
+{% load static %}
+
+{% block title %}ChapinChat{% endblock %}
+
+{% block body %}
+<h1>Cargar archivo XML</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Cargar</button>
+  </form>
+
+
+{% endblock %}
+
+
+<!-- <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-3">
+        
+        <input class="form-control" type="file" id="formFileMultiple" multiple>
+        <input class="btn btn-primary" type="submit" value="Cargar archivo">
+    </div>
+  </form>
+
+  {% if data %}
+    <ul>
+        {% for child in data %}
+            <li>{{ child }}</li>
+        {% endfor %}
+    </ul>
+{% endif %} -->
+
+

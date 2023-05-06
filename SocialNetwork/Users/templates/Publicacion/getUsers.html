@@ -1,0 +1,12 @@
+{% extends 'Publicacion/plantilla.html' %}
+{% load static %}
+{% block title %}Lista de Usuarios{% endblock %}
+{% block body %}
+<h1>Plataformas</h1>
+  <ul>
+    {% for juego in plataformas %}
+      <li>{{ juego.codigo }} - {{ juego.nombre }} </li>
+    {% endfor %}
+  </ul>
+<!-- <pre>{{ xmlcontent }}</pre> -->
+{% endblock %}

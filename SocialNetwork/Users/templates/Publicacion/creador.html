@@ -1,0 +1,62 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador</title>
+    <link rel="stylesheet" href="{% static 'css/creador.css' %}">
+    
+    
+</head>
+<body>
+  <nav class="nav nav-pills nav-fill">
+    <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">Home</a>
+    <a class="nav-link active" aria-current="page" href="{% url 'Dashboard' %}">Inicio</a>
+    
+  </nav>
+ 
+    <section class="hero-section">
+     
+        <div class="card-container">
+          <div class="card">
+            <div class="card-background" style="background-image: url(/static/Usac_logo.png);"></div>
+            <div class="card-background" ></div>
+            <div class="content">
+              <div class="card-category">Universidad</div>
+              <h3 class="card-heading">USAC</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-background" style="background-image: url(/static/foto1.jpg);"></div>
+            <div class="card-background">
+               
+            </div>
+            <div class="content">
+              <div class="card-category">Nombre</div>
+              <h3 class="card-heading">Luis Salán</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-background" style="background-image: url(/static/logo_python.png);"></div>
+            <div class="content">
+              <div class="card-category">Materia</div>
+              <h3 class="card-heading">IPC 2</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>
+
+  
+
+
+
+
+
+
